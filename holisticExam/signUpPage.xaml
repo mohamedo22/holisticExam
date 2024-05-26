@@ -1,0 +1,48 @@
+﻿<Page x:Class="holisticExam.signUpPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:holisticExam"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="signUpPage">
+       
+    <Grid Background="silver">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="2" Width="400" Margin="-350,0,0,0" FontSize="30">welcome To sign Up Page</Label>
+        <Label FontSize="15" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Right">User Name</Label>
+        <TextBox Width="200" Height="20" Name="userNameTextBox" Grid.Column="1" Grid.Row="1"></TextBox>
+        <Label FontSize="15" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right">Password</Label>
+        <PasswordBox Width="200" Height="20" Name="PasswordTextBox" Grid.Column="1" Grid.Row="2"></PasswordBox>
+        <Label FontSize="15" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right">Age</Label>
+        <TextBox Width="200" Height="20" Grid.Column="1" Name="AgeTextBox" Grid.Row="3"></TextBox>
+        <Label FontSize="15" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right">Phone Number</Label>
+        <TextBox Width="200" Height="20" Name="PhoneNumberTextBox" Grid.Column="1" Grid.Row="4"></TextBox>
+        <Label FontSize="15" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right">Gender</Label>
+        <RadioButton Grid.Row="5" Name="male" GroupName="gender" Grid.Column="1" VerticalAlignment="Center" >Male</RadioButton>
+        <RadioButton Grid.Row="5" Name="female" GroupName="gender" Grid.Column="1" Margin="50,0,0,0" VerticalAlignment="Center" >Female</RadioButton>
+        <Label FontSize="15" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Right">City</Label>
+        <ComboBox Width="100" Name="cityes" Grid.Row="6" Grid.Column="1"  Height="30">
+            <ComboBoxItem>cairo</ComboBoxItem>
+            <ComboBoxItem>Giza</ComboBoxItem>
+            <ComboBoxItem>Alex</ComboBoxItem>
+        </ComboBox>
+        <Button Width="100" Height="30" Grid.Row="7" Foreground="White" Background="#e60000" Grid.ColumnSpan="2" Click="Button_Click">Submit</Button>
+        <Button Width="100" Height="30" Grid.Row="8" Foreground="red" BorderThickness="0,0,0,1" BorderBrush="blue" Background="Transparent" Grid.ColumnSpan="2" Click="Button_Click_1">I have an account</Button>
+    </Grid>
+</Page>
